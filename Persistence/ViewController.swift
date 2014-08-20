@@ -10,9 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //@IBOutlet var lineFields:[UITextField]
-    //需要strong 否则会报错
-    @IBOutlet strong var lineFields: NSArray!
+
+    
+    @IBOutlet var lineFields: [UITextField]!
+    
     let kRootKey="kRootKey"
     
     var dataFilePath:NSString{

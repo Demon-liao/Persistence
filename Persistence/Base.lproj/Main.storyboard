@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -56,7 +57,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AsN-mP-bHm">
-                                <rect key="frame" x="75" y="30" width="225" height="30"/>
+                                <rect key="frame" x="75" y="28" width="225" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -69,10 +70,14 @@
                         <size key="landscapeSize" width="480" height="320"/>
                     </simulatedScreenMetrics>
                     <connections>
-                        <outletCollection property="lineFields" destination="TQZ-kk-GsG" id="Tu8-1S-RJN"/>
-                        <outletCollection property="lineFields" destination="AsN-mP-bHm" id="wYI-JC-JDd"/>
-                        <outletCollection property="lineFields" destination="ego-aB-v39" id="yjK-tw-GyT"/>
-                        <outletCollection property="lineFields" destination="jmK-Ix-iVI" id="WWs-cN-yAo"/>
+                        <outletCollection property="lineFields" destination="TQZ-kk-GsG" collectionClass="NSMutableArray" id="Tu8-1S-RJN"/>
+                        <outletCollection property="lineFields" destination="AsN-mP-bHm" collectionClass="NSMutableArray" id="wYI-JC-JDd"/>
+                        <outletCollection property="lineFields" destination="ego-aB-v39" collectionClass="NSMutableArray" id="yjK-tw-GyT"/>
+                        <outletCollection property="lineFields" destination="jmK-Ix-iVI" collectionClass="NSMutableArray" id="WWs-cN-yAo"/>
+                        <outletCollection property="lineFields" destination="jmK-Ix-iVI" collectionClass="NSMutableArray" id="dIU-BS-Ecr"/>
+                        <outletCollection property="lineFields" destination="TQZ-kk-GsG" collectionClass="NSMutableArray" id="1dA-8C-2Un"/>
+                        <outletCollection property="lineFields" destination="ego-aB-v39" collectionClass="NSMutableArray" id="MFQ-br-PTE"/>
+                        <outletCollection property="lineFields" destination="AsN-mP-bHm" collectionClass="NSMutableArray" id="cvg-0O-oMk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

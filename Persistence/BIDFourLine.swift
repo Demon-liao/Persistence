@@ -8,18 +8,18 @@
 
 import UIKit
 
-class BIDFourLine: NSObject ,NSCoding,NSCopying{
+class BIDFourLine: NSObject ,NSCopying{
     var lines:NSArray?
     let kLinesKey:NSString="kLinesKey"
     
-    init() {
+    override init() {
         
     }
     init(coder aDecoder: NSCoder!) {
         self.lines = aDecoder.decodeObjectForKey(kLinesKey) as? NSArray
     }
     func encodeWithCoder(aCoder: NSCoder!) {
-        aCoder.encodeObject(self.lines, forKey: kLinesKey)
+        aCoder.encodeObject(self.lines!, forKey: kLinesKey)
     }
     
     func copyWithZone(zone: NSZone) -> AnyObject! {
